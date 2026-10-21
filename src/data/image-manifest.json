@@ -1,0 +1,134 @@
+{
+  "hero-desktop": {
+    "source": "01-hero-desktop.png",
+    "crop": null,
+    "width": 1672,
+    "height": 941,
+    "widths": [
+      960,
+      1280,
+      1672
+    ],
+    "focal": "70% 50%"
+  },
+  "hero-mobile": {
+    "source": "02-hero-mobile.png",
+    "crop": null,
+    "width": 1024,
+    "height": 1536,
+    "widths": [
+      480,
+      768,
+      1024
+    ],
+    "focal": "50% 60%"
+  },
+  "luwombo": {
+    "source": "03-luwombo.png",
+    "crop": null,
+    "width": 1536,
+    "height": 1024,
+    "widths": [
+      640,
+      1024,
+      1536
+    ],
+    "focal": "40% 55%"
+  },
+  "buffet": {
+    "source": "04-traditional-buffet.png",
+    "crop": null,
+    "width": 1536,
+    "height": 1024,
+    "widths": [
+      640,
+      1024,
+      1536
+    ],
+    "focal": "50% 55%"
+  },
+  "grill": {
+    "source": "05-grilled-platter.png",
+    "crop": null,
+    "width": 1536,
+    "height": 1024,
+    "widths": [
+      640,
+      1024,
+      1536
+    ],
+    "focal": "35% 50%"
+  },
+  "vegetarian": {
+    "source": "06-vegetarian-meal.png",
+    "crop": null,
+    "width": 1536,
+    "height": 1024,
+    "widths": [
+      640,
+      1024,
+      1536
+    ],
+    "focal": "50% 50%"
+  },
+  "drinks": {
+    "source": "11-fresh-drinks.png",
+    "crop": null,
+    "width": 1122,
+    "height": 1402,
+    "widths": [
+      480,
+      800,
+      1122
+    ],
+    "focal": "40% 55%"
+  },
+  "wedding": {
+    "source": "07-wedding-buffet.png",
+    "crop": null,
+    "width": 1536,
+    "height": 1024,
+    "widths": [
+      640,
+      1024,
+      1536
+    ],
+    "focal": "35% 60%"
+  },
+  "introduction": {
+    "source": "08-introduction-catering.png",
+    "crop": null,
+    "width": 1536,
+    "height": 1024,
+    "widths": [
+      640,
+      1024,
+      1536
+    ],
+    "focal": "40% 65%"
+  },
+  "corporate": {
+    "source": "09-corporate-lunch.png",
+    "crop": null,
+    "width": 1536,
+    "height": 1024,
+    "widths": [
+      640,
+      1024,
+      1536
+    ],
+    "focal": "60% 60%"
+  },
+  "private": {
+    "source": "10-private-celebration.png",
+    "crop": null,
+    "width": 1536,
+    "height": 1024,
+    "widths": [
+      640,
+      1024,
+      1536
+    ],
+    "focal": "50% 55%"
+  }
+}

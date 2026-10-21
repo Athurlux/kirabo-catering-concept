@@ -1,0 +1,60 @@
+:root {
+  /* Brief palette: cream, banana-leaf green, charcoal and roasted terracotta.
+     Contrast (WCAG): charcoal on cream 13.9:1, green on cream 9.5:1, cream on green 9.5:1,
+     terracotta on cream 4.9:1 (and cream on terracotta, for buttons), muted on cream 6.1:1
+     (5.5:1 on cream-deep), on-dark-muted on green 8.0:1. Terracotta is only 4.4:1 on
+     cream-deep, so small text there uses terracotta-deep (6.4:1 on cream). */
+  --cream: #f7f0e4;
+  --cream-deep: #efe4d1;
+  --paper: #fcf8f1;
+  --green: #294336;
+  --green-deep: #1f3329;
+  --green-hover: #335241;
+  --charcoal: #24231f;
+  --muted: #5f5a4e;
+  --terracotta: #a64e32;
+  --terracotta-deep: #8e3f26;
+  --line: #e2d6c1;
+  --line-strong: #c4b59b;
+  --on-dark: #f7f0e4;
+  --on-dark-muted: #e9dcc4;
+  --leaf-light: #c9dcc2;
+
+  --danger: #9b2c1c;
+  --danger-bg: #f9e6df;
+
+  --serif: 'Fraunces Variable', 'Fraunces', Georgia, 'Times New Roman', serif;
+  --sans: 'Manrope Variable', 'Manrope', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+
+  --text-xs: 0.8125rem;
+  --text-sm: 0.9375rem;
+  --text-base: 1.0625rem;
+  --text-lg: 1.1875rem;
+  --display-sm: clamp(1.6rem, 1.3rem + 1.2vw, 2.2rem);
+  --display-md: clamp(2rem, 1.5rem + 2.2vw, 3.3rem);
+  --display-lg: clamp(2.5rem, 1.6rem + 4vw, 5rem);
+
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 4.5rem;
+  --space-9: clamp(4rem, 2.6rem + 5.5vw, 8rem);
+
+  /* Soft, food-friendly corners on photographs and panels; controls a little rounder. */
+  --r-control: 6px;
+  --r-panel: 10px;
+  --r-photo: 14px;
+
+  --container: 1240px;
+  --gutter: clamp(16px, 4vw, 48px);
+  --header-h: 76px;
+  --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+@media (max-width: 699px) {
+  :root { --header-h: 64px; }
+}

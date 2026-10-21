@@ -1,0 +1,110 @@
+[
+  {
+    "file": "images/01-hero-desktop.png",
+    "dimensions": [
+      1672,
+      941
+    ],
+    "bytes": 2517423,
+    "sha256": "778c1e489c315a5ab1e1f939c4a1ba1378d262ba0fb6cba2ce8da4f25b60dcd7"
+  },
+  {
+    "file": "images/02-hero-mobile.png",
+    "dimensions": [
+      1024,
+      1536
+    ],
+    "bytes": 2542075,
+    "sha256": "4ee036e3bf5fce73de24507de8e2a0c767ef4c453c353c5d5fe2acee46675a3c"
+  },
+  {
+    "file": "images/03-luwombo.png",
+    "dimensions": [
+      1536,
+      1024
+    ],
+    "bytes": 2574360,
+    "sha256": "bf272a58b885a08e35458d7f08e3777b1a01a7e84c139f1db09f166b56a7511a"
+  },
+  {
+    "file": "images/04-traditional-buffet.png",
+    "dimensions": [
+      1536,
+      1024
+    ],
+    "bytes": 2761418,
+    "sha256": "4e084c453d7d006682b0d0834f8a04f1eb1d89b5c69084a9272e51da531ee04c"
+  },
+  {
+    "file": "images/05-grilled-platter.png",
+    "dimensions": [
+      1536,
+      1024
+    ],
+    "bytes": 2775193,
+    "sha256": "44079d022980389d08948268427f8eb1ad4d903d04f8c1c49a42ace93874bccf"
+  },
+  {
+    "file": "images/06-vegetarian-meal.png",
+    "dimensions": [
+      1536,
+      1024
+    ],
+    "bytes": 2898070,
+    "sha256": "66e8f5e6ca79ec6c0064def513d6e7bc4535232272a3c033bf074bad33c80804"
+  },
+  {
+    "file": "images/07-wedding-buffet.png",
+    "dimensions": [
+      1536,
+      1024
+    ],
+    "bytes": 2551038,
+    "sha256": "60d992ee431f3111589eed5410e57df511d50eef79a1b0fee2e8208dd915534f"
+  },
+  {
+    "file": "images/08-introduction-catering.png",
+    "dimensions": [
+      1536,
+      1024
+    ],
+    "bytes": 2931596,
+    "sha256": "142c3613ea4fc38ee27f342f2c4510f708a1b8149cb98e7f529e217bed4fd544"
+  },
+  {
+    "file": "images/09-corporate-lunch.png",
+    "dimensions": [
+      1536,
+      1024
+    ],
+    "bytes": 2372008,
+    "sha256": "517eb13ba123012322555811091b5fc459457bfe9bb3ed48aff58776e5cff4fa"
+  },
+  {
+    "file": "images/10-private-celebration.png",
+    "dimensions": [
+      1536,
+      1024
+    ],
+    "bytes": 2918305,
+    "sha256": "d833978e30f58b15a1336f652527cde4720f2a0cfd98697bdd3e38f386411e57"
+  },
+  {
+    "file": "images/11-fresh-drinks.png",
+    "dimensions": [
+      1122,
+      1402
+    ],
+    "bytes": 2679696,
+    "sha256": "4271adffbe15fed0a9b974f112a84e59ecffa7571e20c49d680d42cd8d1a88cc"
+  },
+  {
+    "file": "images/12-banana-leaf-background.png",
+    "dimensions": [
+      1536,
+      1024
+    ],
+    "bytes": 2020128,
+    "sha256": "3c6cee30e8a9da06c4e37a98270583cc211d7b992bb6004f02ded592231f0a11"
+  }
+]
