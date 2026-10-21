@@ -1,6 +1,6 @@
 // Compact browser journey check. Run against a preview build:
 //   npm run build && npm run preview -- --port 4181   (another terminal)
-//   npm run verify     or   VERIFY_URL=https://kirabo-catering-concept.pages.dev npm run verify
+//   npm run verify     or   VERIFY_URL=https://kirabo-catering-concept.kranks533.workers.dev npm run verify
 // One headless Chrome, one page at a time. Checks wait for state rather than sampling once.
 import { chromium } from 'playwright'
 
@@ -90,7 +90,8 @@ try {
   for (let i = 0; i < 12; i++) await page.keyboard.press('Tab')
   check('focus stays inside the drawer', await page.evaluate(() => document.querySelector('.drawer')?.contains(document.activeElement)))
   await page.getByRole('button', { name: 'Remove Passion fruit juice' }).click()
-  check('remove in the drawer updates the list and keeps focus inside', await sees('2 dishes') && await page.evaluate(() => document.querySelector('.drawer')?.contains(document.activeElement)))
+  // Focus moves on the next frame, so wait for it rather than sampling once.
+  check('remove in the drawer updates the list and keeps focus inside', await sees('2 dishes') && await waitFor(() => document.activeElement?.getAttribute('aria-label') === 'Remove Beef skewers'))
   await page.getByRole('button', { name: 'Clear my menu' }).click()
   check('clear empties the menu and offers Undo', await sees('Menu cleared.') && await sees('No dishes on your menu yet.') && (await stored()) === null)
   await button('Undo').click()

@@ -35,7 +35,9 @@ export default function Home() {
           <source media="(max-width: 767px)" srcSet={srcSet('hero-mobile')} sizes="100vw" width={manifest['hero-mobile'].width} height={manifest['hero-mobile'].height} />
           <img
             data-hero="photo"
-            src="/images/hero-desktop-1280.webp" srcSet={srcSet('hero-desktop')} sizes="100vw"
+            src="/images/hero-desktop-1280.webp" srcSet={srcSet('hero-desktop')}
+            // Matches the art-directed width in pages.css, so wide screens fetch the 1280 file.
+            sizes="(min-width: 1000px) max(72vw, calc(100vw - 460px)), 100vw"
             width={manifest['hero-desktop'].width} height={manifest['hero-desktop'].height}
             alt="A wooden table of luwombo in banana leaves, steamed matooke, rice, grilled chicken, greens and groundnut sauce"
             fetchPriority="high"

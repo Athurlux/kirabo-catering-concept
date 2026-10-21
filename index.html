@@ -29,12 +29,12 @@
       // never does. Buttons and links are never hidden.
       (function () {
         if ((location.pathname.replace(/\/$/, '') || '/') !== '/') return
-        [['(min-width: 768px)', '/images/hero-desktop-960.webp 960w, /images/hero-desktop-1280.webp 1280w, /images/hero-desktop-1672.webp 1672w'],
-         ['(max-width: 767px)', '/images/hero-mobile-480.webp 480w, /images/hero-mobile-768.webp 768w, /images/hero-mobile-1024.webp 1024w']]
+        [['(min-width: 768px)', '/images/hero-desktop-960.webp 960w, /images/hero-desktop-1280.webp 1280w, /images/hero-desktop-1672.webp 1672w', '(min-width: 1000px) max(72vw, calc(100vw - 460px)), 100vw'],
+         ['(max-width: 767px)', '/images/hero-mobile-480.webp 480w, /images/hero-mobile-768.webp 768w, /images/hero-mobile-1024.webp 1024w', '100vw']]
           .forEach(function (item) {
             var link = document.createElement('link')
             link.rel = 'preload'; link.as = 'image'; link.media = item[0]
-            link.setAttribute('imagesrcset', item[1]); link.setAttribute('imagesizes', '100vw'); link.setAttribute('fetchpriority', 'high')
+            link.setAttribute('imagesrcset', item[1]); link.setAttribute('imagesizes', item[2]); link.setAttribute('fetchpriority', 'high')
             document.head.appendChild(link)
           })
         if (!matchMedia('(prefers-reduced-motion: reduce)').matches) {

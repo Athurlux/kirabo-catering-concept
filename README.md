@@ -61,16 +61,18 @@ node scripts/perf.mjs 390 4                             # rough LCP/CLS/bytes (P
 
 ## Deployment
 
-Cloudflare Pages, project `kirabo-catering-concept`, by **Direct Upload**. Pushing to GitHub does
-**not** deploy. To publish an update:
+Live at **https://kirabo-catering-concept.kranks533.workers.dev**, served as static assets on
+Cloudflare Workers (`wrangler.jsonc`, no Worker script). Deploys are manual: pushing to GitHub
+does **not** deploy. To publish an update:
 
 ```bash
 npm test && npm run build
-npm run deploy                                  # builds and uploads dist/ with wrangler
-VERIFY_URL=https://kirabo-catering-concept.pages.dev npm run verify
+npm run deploy                                  # builds, then `wrangler deploy` uploads dist/
+VERIFY_URL=https://kirabo-catering-concept.kranks533.workers.dev npm run verify
 ```
 
-`npm run deploy` needs `npx wrangler login` once on the machine. The build writes `_redirects`
-that rewrite only known routes to `/` (not `/index.html`, which Pages answers with a 308 to the
-home page), and `404.html`, so unknown URLs return a real 404. `public/_headers` sets `noindex`
-and basic security headers. `.env` holds only the public site URL used in social metadata.
+`npm run deploy` needs `npx wrangler login` once on the machine. The build writes `dist/_redirects`,
+which rewrites only the app's known routes to `/`, and `dist/404.html`, which `wrangler.jsonc`
+serves with a real 404 status for anything else (`not_found_handling: "404-page"`).
+`public/_headers` sets `noindex` and basic security headers. `.env` holds only the public site URL
+used in social metadata. Rollback: `npx wrangler rollback` to the previous version.

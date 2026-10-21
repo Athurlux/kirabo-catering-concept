@@ -11,7 +11,7 @@
     "test": "vitest run",
     "images": "py -P scripts/prepare-images.py",
     "verify": "node scripts/verify.mjs",
-    "deploy": "npm run build && npx wrangler@4 pages deploy dist --project-name kirabo-catering-concept --branch main",
+    "deploy": "npm run build && npx wrangler@4 deploy",
     "social": "node scripts/social.mjs",
     "brand": "py -P scripts/make-brand.py"
   },

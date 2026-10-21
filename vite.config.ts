@@ -6,7 +6,7 @@ import react from '@vitejs/plugin-react'
 import { OCCASIONS } from './src/data/occasions'
 
 /**
- * Cloudflare Pages routing. Instead of a catch-all SPA fallback (which answers 200 for any
+ * Cloudflare static-asset routing. Instead of a catch-all SPA fallback (which answers 200 for any
  * URL), only the app's real routes are rewritten to the app shell. Anything else falls through
  * to 404.html: a copy of the app that renders the not-found page, served with status 404.
  * Occasion slugs come from the data file, so a new occasion cannot be forgotten here.
@@ -21,7 +21,7 @@ function pagesRouting(): Plugin {
       const dist = fileURLToPath(new URL('./dist', import.meta.url))
       const html = readFileSync(resolve(dist, 'index.html'), 'utf8')
       writeFileSync(resolve(dist, '404.html'), html)
-      // The target is "/", not "/index.html": Pages normalises /index.html with a 308 to "/",
+      // The target is "/", not "/index.html": Cloudflare normalises /index.html with a redirect to "/",
       // which would send every deep link to the home page.
       writeFileSync(resolve(dist, '_redirects'), ROUTES.map(route => `${route}  /  200`).join('\n') + '\n')
     },

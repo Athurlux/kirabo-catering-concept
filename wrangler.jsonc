@@ -1,0 +1,12 @@
+// Static site on Cloudflare Workers (static assets only, no Worker script).
+// dist/_redirects rewrites the app's known routes to "/" and dist/404.html answers everything
+// else with a real 404 status; both are written by the build (see vite.config.ts).
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "kirabo-catering-concept",
+  "compatibility_date": "2026-10-19",
+  "assets": {
+    "directory": "./dist",
+    "not_found_handling": "404-page"
+  }
+}
